@@ -7,68 +7,83 @@
     <title>練習課題3 | Amazon Form</title>
   </head>
   <body>
-    <div>
-      <h1>
-        <img src="./assets/amazon_logo.png" alt="Amazonのロゴ画像" />
-      </h1>
-      <!-- h1をロゴに使った -->
-      <!-- section必要か -->
-    </div>
-    <section>
-      <h2>アカウントを作成</h2>
-      <form action="#">
-        <p>
-          <label for="name-chinese-character">名前</label>
-          <br />
-          <input id="name-chinese-character" type="text" />
-        </p>
-        <p>
-          <label for="name-katakana">フリガナ</label>
-          <br />
-          <input id="name-katakana" type="text" />
-        </p>
-        <p>
-          <label for="email">Eメールアドレス</label>
-          <br />
-          <input id="email" type="email" />
-        </p>
-        <p>
-          <label for="password">パスワード</label>
-          <br />
-          <input id="password" type="password" />
-        </p>
-        <p>
-          <img
-            src="./assets/info.png"
-            alt=""
-          />パスワードの長さは最低6文字です。
-        </p>
-        <!-- alt空欄にした -->
-        <p>
-          <label for="password-confirmation"
-            >もう一度パスワードを入力してください</label
-          >
-          <br />
-          <input id="password-confirmation" type="password" />
-        </p>
-        <button type="submit">Amazonアカウントを作成</button>
-      </form>
-      <p>
-        ログインすることにより、当社の<a href="#">利用規約</a>および<a href="#"
-          >プライバシー規約</a
-        >に同意したとみなされます。
-      </p>
-      <hr />
-      <p>すでにアカウントをお持ちですか？<a href="#">ログイン</a></p>
-      <!-- →矢印 -->
-    </section>
+    <div class="page">
+      <div class="header-logo">
+        <a href="#">
+          <img class="logo" src="./assets/amazon_logo.png" alt="Amazonのロゴ画像" />
+        </a>
+        <!-- section必要か -->
+      </div>
 
-    <hr />
-    <div>
-      <a href="#">利用規約</a>
-      <a href="#">プライバシー規約</a>
-      <a href="#">ヘルプ</a>
+      <section class="form">
+        <h1>アカウントを作成</h1>
+        <form action="#">
+          <p>
+            <label for="name-chinese-character">名前</label>
+            <br />
+            <input id="name-chinese-character" type="text" />
+          </p>
+          <p>
+            <label for="name-katakana">フリガナ</label>
+            <br />
+            <input id="name-katakana" type="text" />
+          </p>
+          <p>
+            <label for="email">Eメールアドレス</label>
+            <br />
+            <input id="email" type="email" />
+          </p>
+          <p>
+            <label for="password">パスワード</label>
+            <br />
+            <input id="password" type="password" placeholder="最低6文字必要です"/>
+          </p>
+          <p class="info">
+            <img class="info-icon"
+              src="./assets/info.png"
+              alt=""
+            />パスワードの長さは最低6文字です。
+          </p>
+          <!-- alt空欄にした -->
+          <p>
+            <label for="password-confirmation"
+              >もう一度パスワードを入力してください</label
+            >
+            <br />
+            <input id="password-confirmation" type="password" />
+          </p>
+          <button type="submit">Amazonアカウントを作成</button>
+        </form>
+        <p class="info">
+          ログインすることにより、当社の<a href="#">利用規約</a>および<a
+            href="#"
+            >プライバシー規約</a
+          >に同意したとみなされます。
+        </p>
+        <!-- border -->
+        <p class="login-invitation">すでにアカウントをお持ちですか？<a class="login-link" href="#">ログイン</a></p>
+        <!-- →矢印 -->
+      </section>
+
+      <!-- border -->
+      <div class="help-links">
+        <a class="help-link" href="#">利用規約</a>
+        <a class="help-link" href="#">プライバシー規約</a>
+        <a class="help-link" href="#">ヘルプ</a>
+      </div>
+      <p class="credit">
+        <small>©︎1996-2020, Amazon.com, Inc. or its affiliates</small>
+      </p>
     </div>
-    <p><small>©︎1996-2020, Amazon.com, Inc. or its affiliates</small></p>
   </body>
 </html>
+<!-- ロゴのサイズ -->
+<!-- input上部のshadowの落とし方 -->
+<!-- インフォアイコンのサイズ -->
+<!-- インフォアイコンpの上下位置調整 -->
+<!-- ボタンのグラデーション  -->
+<!-- login-invitationの上下位置調整 -->
+<!-- ログインリンクの右三角形 -->
+<!-- help-linkの上下位置調整 -->
+<!-- クラスの分け方 -->
+<!-- font-weightの変更はどこに当てるか -->
