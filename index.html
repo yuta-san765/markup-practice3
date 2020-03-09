@@ -7,60 +7,66 @@
     <title>練習課題3 | Amazon Form</title>
   </head>
   <body>
-      <div class="header-logo">
-        <a href="#"><img class="logo" src="./assets/amazon_logo.png" alt="Amazonのロゴ画像" /></a>
-      </div>
+    <div class="header-logo">
+      <a href="#"
+        ><img class="logo" src="./assets/amazon_logo.png" alt="Amazonのロゴ画像"
+      /></a>
+    </div>
 
-      <section class="form">
-        <h1>アカウントを作成</h1>
-        <form action="#">
-          <p>
-            <label for="name-chinese-character">名前</label>
-            <br />
-            <input id="name-chinese-character" type="text" />
-          </p>
-          <p>
-            <label for="name-katakana">フリガナ</label>
-            <br />
-            <input id="name-katakana" type="text" />
-          </p>
-          <p>
-            <label for="email">Eメールアドレス</label>
-            <br />
-            <input id="email" type="email" />
-          </p>
-          <p>
-            <label for="password">パスワード</label>
-            <br />
-            <input id="password" type="password" placeholder="最低6文字必要です"/>
-          </p>
-          <p class="info-requirement">
-            <img class="info-icon"
-              src="./assets/info.png"
-              alt=""
-            />パスワードの長さは最低6文字です。
-          </p>
+    <section class="form">
+      <h1>アカウントを作成</h1>
+      <form action="#">
+        <label for="name-chinese-character">名前</label>
+        <input id="name-chinese-character" type="text" />
+
+        <label for="name-katakana">フリガナ</label>
+        <input id="name-katakana" type="text" />
+
+        <label for="email">Eメールアドレス</label>
+        <input id="email" type="email" />
+
+        <label for="password">パスワード</label>
+        <input id="password" type="password" placeholder="最低6文字必要です" />
+
+        <p class="info-requirement">
+          <img
+            class="info-icon"
+            src="./assets/info.png"
+            alt=""
+          />パスワードの長さは最低6文字です。
+        </p>
           <!-- alt空欄にした -->
-          <p>
-            <label for="password-confirmation">もう一度パスワードを入力してください</label>
-            <br />
-            <input id="password-confirmation" type="password" />
-          </p>
-          <button type="submit">Amazonアカウントを作成</button>
-        </form>
-        <p class="info-agreement">ログインすることにより、当社の<a href="#">利用規約</a>および<a href="#">プライバシー規約</a>に同意したとみなされます。</p>
-        <!-- border -->
-        <p class="login-invitation">すでにアカウントをお持ちですか？<a class="login-link" href="#">ログイン</a></p>
-        <!-- →矢印 -->
-      </section>
 
+          <label for="password-confirmation"
+            >もう一度パスワードを入力してください</label
+          >
+          <input id="password-confirmation" type="password" />
+          <button type="submit">Amazonアカウントを作成</button>
+      </form>
+
+      <p class="info-agreement">
+        ログインすることにより、当社の<a href="#">利用規約</a>および<a href="#"
+          >プライバシー規約</a
+        >に同意したとみなされます。
+      </p>
       <!-- border -->
-      <div class="help-links">
-        <a class="help-link" href="#">利用規約</a>
-        <a class="help-link" href="#">プライバシー規約</a>
-        <a class="help-link" href="#">ヘルプ</a>
-      </div>
-      <p class="credit"><small>©︎1996-2020, Amazon.com, Inc. or its affiliates</small></p>
+      <p class="login-invitation">
+        すでにアカウントをお持ちですか？<a class="login-link" href="#"
+          >ログイン</a
+        >
+      </p>
+      <!-- →矢印 -->
+    </section>
+
+    <!-- border -->
+    <ul class="help-links">
+      <li class="help-link" href="#"><a href="#">利用規約</a></li>
+      <li class="help-link" href="#"><a href="#">プライバシー規約</a></li>
+      <li class="help-link" href="#"><a href="#">ヘルプ</a></li>
+    </ul>
+    <p class="credit">
+      <small>©︎1996-2020, Amazon.com, Inc. or its affiliates</small>
+    </p>
   </body>
 </html>
 <!-- ロゴのサイズ -->
