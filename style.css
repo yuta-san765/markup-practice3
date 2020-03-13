@@ -50,8 +50,8 @@ button {
 }
 .form {
   max-width: 350px;
-  margin: 0 auto 14px;
-  padding: 20px 20px;
+  margin: 0 auto;
+  padding: 20px;
   border-radius: 4px;
   border: 1px #ddd solid;
 }
@@ -60,7 +60,6 @@ button {
 }
 .info-requirement {
   font-size: 12px;
-  /* margin-top: -8px; 修正前 */
   margin-top: 0;
 }
 .info-agreement {
@@ -69,29 +68,17 @@ button {
   border-bottom: 1px solid #ddd;
   margin-bottom: 31px;
 }
-/* .login-invitationのpadding-topを.info-agreementのmargin-bottomに置き換えた */
 
 .login-invitation {
   font-size: 12px;
   vertical-align: text-bottom;
   margin: 0 ;
 }
-/* .login-link::after {
-  content: '';
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 2px 0 2px 5px;
-  border-color: transparent transparent transparent #0066c0;
-} */
-/* ログインリンクの三角形を作ろうとした */
 .help-links {
   border-top: #ddd 1px solid;
   width: 298px;
-  height: 44px;
   margin: 26px auto 10px;
   padding: 31px 0 0;
-  /* padding-left: 0; で<li>ビュレットのための余白を打ち消し */
   list-style: none;
   display: flex;
   justify-content: center;
